@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
+    let base = Number(prompt(`Informe o tamanho da base do triângulo (em cm):`));
+    let altura = Number(prompt(`Informe o tamanho da altura de um triângulo (em cm):`));
 
     //PROCESSAMENTO
-
-
+    function area(triângulo) {
+        return (base * altura) / 2;
+    }
+    alert(`A área de um triângulo (em cm) com os seguintes tamanho é: ${area(base, altura)} cm\nBase: ${base} cm\nAltura: ${altura} cm`);
     //SAÍDA
 
 </script>

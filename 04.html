@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    let fahrenheit = Number(prompt(`Insira uma temperatura (em Fahrenheit) para ser realizado a conversão para Graus Celsius:`))
 
     //PROCESSAMENTO
-
-
+    function temp(temperatura) {
+        return (fahrenheit - 32) * 5 / 9;
+    }
+    alert(`A temperatura em graus Celsius é: ${temp(fahrenheit)}.`);
     //SAÍDA
 
 </script>

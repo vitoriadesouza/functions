@@ -5,11 +5,19 @@
     */
 
     //ENTRADA
-
+    let numero = Number(prompt(`Informe um número:`));
 
     //PROCESSAMENTO
-
-
+    function fatorial(n) {
+        while (numero < 0) {
+            numero = Number(prompt(`Erro! Não existe fatorial de número negativo. Tente novamente:`));
+        }
+        let resultado = 1
+        for (let i = n; i > 1; i--) {
+            resultado *= i;
+        }
+        return resultado;
+    }
+    alert(`O fatorial de ${numero} é: ${fatorial(numero)}`);
     //SAÍDA
-
 </script>

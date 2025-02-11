@@ -7,11 +7,23 @@
     */
 
     //ENTRADA
-
+    let palavra = prompt(`Insira uma palavra:`);
+    let totalVogais = contarVogais(palavra);
+    
 
     //PROCESSAMENTO
+    function contarVogais(texto) {    
+        let vogais = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"];
+        let contador = 0;
 
+        for(letra of texto) {
+            if(vogais.includes(letra)) {
+                contador++
+            }
+        }
+        return contador;
+    }
 
     //SAÍDA
-
+    alert(`A palavra ${palavra} contém ${totalVogais} vogal(is).`)
 </script>

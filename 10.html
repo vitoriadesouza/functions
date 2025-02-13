@@ -6,11 +6,20 @@
     */
 
     //ENTRADA
-    
-
+    let frase = prompt(`Insira uma frase: `).toUpperCase();
+    let letra = prompt(`Insira uma letra:`).toUpperCase();
+    let contador = 0;    
     //PROCESSAMENTO
-
-
+    function acharLetra(frase, letra ) {
+        for(let i = 0; i < frase.length; i++) {
+            if (frase[i] == letra) {
+                contador++
+            }
+        }
+        return contador;
+    }
+    let t = acharLetra(frase, letra);
+    alert(`A frase/palavra escolhida é: ${frase}\nA letra escolhida foi: ${letra}\n e a letra aparece ${t} vezes na frase/palavra.`);
     //SAÍDA
 
 </script>
